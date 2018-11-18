@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_head_circumference"
+        android:icon="@drawable/face_outline"
+        android:title="@string/title_head_circumference" />
+
+    <item
+        android:id="@+id/navigation_wnh"
+        android:icon="@drawable/weight_kilogram"
+        android:title="@string/title_wnh" />
+
+    <item
+        android:id="@+id/navigation_bp"
+        android:icon="@drawable/water"
+        android:title="@string/title_bp" />
+
+</menu>

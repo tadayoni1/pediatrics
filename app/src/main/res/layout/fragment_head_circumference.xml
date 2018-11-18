@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/result_cv"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="24dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="32dp"
+            app:cardPreventCornerOverlap="false"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/gradient_head"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/label_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/head_circumference"
+                    android:textColor="@color/md_white_1000"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/head_circumference_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/md_white_1000"
+                    android:textSize="48sp"
+                    tools:text="@string/sample_head_size" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/gender_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:gravity="center"
+            android:text="@string/gender"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/age_tv"
+            app:layout_constraintTop_toBottomOf="@id/result_cv" />
+
+        <TextView
+            android:id="@+id/age_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:gravity="center"
+            android:text="@string/age"
+            app:layout_constraintLeft_toRightOf="@id/gender_tv"
+            app:layout_constraintRight_toLeftOf="@id/at_birth_tv"
+            app:layout_constraintTop_toBottomOf="@id/result_cv" />
+
+        <TextView
+            android:id="@+id/at_birth_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:gravity="center"
+            android:text="@string/size_at_birth"
+            app:layout_constraintLeft_toRightOf="@id/age_tv"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/result_cv" />
+
+        <NumberPicker
+            android:id="@+id/gender"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:descendantFocusability="blocksDescendants"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/age"
+            app:layout_constraintTop_toBottomOf="@id/gender_tv" />
+
+        <NumberPicker
+            android:id="@+id/age"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:descendantFocusability="blocksDescendants"
+            app:layout_constraintLeft_toRightOf="@id/gender"
+            app:layout_constraintRight_toLeftOf="@id/at_birth"
+            app:layout_constraintTop_toBottomOf="@id/gender_tv" />
+
+        <NumberPicker
+            android:id="@+id/at_birth"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:descendantFocusability="blocksDescendants"
+            app:layout_constraintLeft_toRightOf="@id/age"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/gender_tv" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
