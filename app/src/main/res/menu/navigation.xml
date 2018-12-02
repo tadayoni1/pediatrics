@@ -11,9 +11,9 @@
         android:icon="@drawable/weight_kilogram"
         android:title="@string/title_wnh" />
 
-    <item
-        android:id="@+id/navigation_bp"
-        android:icon="@drawable/water"
-        android:title="@string/title_bp" />
+    <!--<item-->
+        <!--android:id="@+id/navigation_bp"-->
+        <!--android:icon="@drawable/water"-->
+        <!--android:title="@string/title_bp" />-->
 
 </menu>
