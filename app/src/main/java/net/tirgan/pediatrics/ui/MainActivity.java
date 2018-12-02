@@ -32,8 +32,8 @@ public class MainActivity extends AppCompatActivity {
                             .replace(R.id.fragment_container, mHeightAndWeightFragment)
                             .commit();
                     return true;
-                case R.id.navigation_bp:
-                    return true;
+//                case R.id.navigation_bp:
+//                    return true;
             }
             return false;
         }
